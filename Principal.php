@@ -1,8 +1,7 @@
 <?php
 session_start();
 include "./logica/conexion.php";
-$no_cuenta= $_SESSION['usermane'];//413112576
-
+$no_cuenta= $_SESSION['usermane'];
 
 if(!isset($no_cuenta)){
 
@@ -17,13 +16,10 @@ if(!isset($no_cuenta)){
     $row=mysqli_fetch_assoc($resultado);
 
 
-    echo "<h1> HOLA BIENVENIDO: ".$row['nombre_usuario']." </h1> ";
+    echo "<center> <h1> HOLA BIENVENIDO: ".$row['nombre_usuario']." </h1></center>  ";
 //listar registros            
     include "logica/logicaListado.php";
-
-    echo "<a href='logica/salir.php'> SALIR</a>";
-
+  
 }
-
 
 ?>
