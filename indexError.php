@@ -10,9 +10,9 @@
 
 <body>
     
-<h1>Login error</h1>
+<center> <h1>Login error</h1></center> 
 <div  >
-    
+    <center> 
         <form method="POST" action="logica/loguear.php">
 
             <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
@@ -23,7 +23,7 @@
             <button type="submit">Inicar Sesion</button>
 
         </form>
-    
+    </center> 
 </div>
 </body>
 
